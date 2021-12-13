@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 15, 2021, 8:35:28 AM
+    Author     : oth
+*/
+
+.root{
+  -fx-background-color:pink;
+    
+}
+
+.t{
+   -fx-font-size:16px;
+   -fx-text-fill:brown;
+  -fx-font-weight:#191970;
+   -fx-background-radius:13px;
+}
+
+.b{
+
+    -fx-box-shadow: -30px 50px orange, -2px 20px orange, -1px 1px orange;
+    -fx-border: 1px solid orange;
+    -fx-text-fill:#191970;
+     -fx-background-radius:13px;
+     -fx-color:powderblue;
+    
+}
+
+.c{
+   -fx-background-color:powderblue; 
+}
+.B{
+   -fx-background-color:aquamarine;  
+} 
+.parent {
+    -fx-background-color: transparent; 
+}
+.pane { 
+    -fx-background-color: lightblue;
+}
+
+.vbox {
+    -fx-background-color: #ffffff;  
+}
+
+.signin{
+    -fx-background-color: transparent;
+    
+}
+.buttons { 
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.buttons2{
+    -fx-background-color:
+            #707070,
+            linear-gradient(#fcfcfc, #f3f3f3),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px; 
+}
+
+.font {
+    -fx-font-family: 'Josefin Sans', sans-serif;
+}
+.font2{
+   -fx-font-family: 'Roboto Condensed', sans-serif;
+
+}
+.invalid_label {
+    -fx-text-fill: #c20e3e;
+    
+}
+
+.docButton{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+  -fx-background-color: linear-gradient(#035F85, #1385B4);
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.exit
+{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0,0 0 6 0,0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#0e0e61 0%,#126690 100%),
+             #9d4024,
+             #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%,#0e0e61,#126690);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-prompt-text-fill:#43a16f;
+}
+.shiny {
+    -fx-background-color:
+            linear-gradient(#2c9aab, #3729a3),
+            linear-gradient(#3729a3, #ffef84),
+            linear-gradient(#3729a3, #ffea6a),
+            linear-gradient(#43becc 0%, #2f858f 50%, #9de3eb 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #060e66;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+.shiny2 {
+    -fx-background-color:
+            linear-gradient(#a6a9ad, #3729a3),
+            linear-gradient(#a6a9ad, #ffef84),
+            linear-gradient(#a6a9ad, #ffea6a),
+            linear-gradient(#a6a9ad 0%, #939699 50%, #646669 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #3b3c3d;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+.jfx-text-field {
+    -fx-prompt-text-fill: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+    -fx-text-inner-color: white;
+}

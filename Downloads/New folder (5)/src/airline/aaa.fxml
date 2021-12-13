@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="airline.AaaController">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="91.0" prefWidth="757.0">
+         <children>
+            <TextField fx:id="TD" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+            <RadioButton fx:id="bookforfamily" layoutX="586.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioaction" text="BOOK for Family" />
+            <RadioButton fx:id="bookforyou" layoutX="586.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioaction" text="Book for you only" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneltotal" layoutX="-1.0" layoutY="111.0" prefHeight="550.0" prefWidth="757.0" visible="false">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="103.0" prefHeight="91.0" prefWidth="757.0">
+               <children>
+                  <TextField fx:id="TD1" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="12.0" prefHeight="91.0" prefWidth="757.0">
+               <children>
+                  <TextField fx:id="TD2" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="194.0" prefHeight="91.0" prefWidth="757.0">
+               <children>
+                  <TextField fx:id="TD3" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="285.0" prefHeight="91.0" prefWidth="757.0">
+               <children>
+                  <TextField fx:id="TD4" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="374.0" prefHeight="91.0" prefWidth="757.0">
+               <children>
+                  <TextField fx:id="TD5" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton layoutX="233.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="233.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="351.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" />
+                  <RadioButton layoutX="468.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

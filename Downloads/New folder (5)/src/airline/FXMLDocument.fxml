@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #b4d7Fe#3d6cb5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airline.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="170.0" prefWidth="900.0">
+         <children>
+            <AnchorPane fx:id="showflightpan" layoutY="-1.0" onMouseClicked="#mouseclickedd" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="183.0" prefWidth="217.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <ImageView fx:id="showflight" fitHeight="130.0" fitWidth="118.0" layoutX="35.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../flight%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="text1" layoutX="28.0" layoutY="121.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: transparent;" text="SHOW FLIGHT" textFill="#3d6cb2">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="userprofile" layoutX="243.0" layoutY="1.0" onMouseClicked="#mouseclickedd" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="173.0" prefWidth="218.0" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <ImageView fx:id="userp1" fitHeight="112.0" fitWidth="130.0" layoutX="46.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../man.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="text2" layoutX="41.0" layoutY="133.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="USER PROFIE" textFill="#3d6cb2">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="-233.0" layoutY="-35.0" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="changepass" layoutX="485.0" layoutY="-2.0" onMouseClicked="#mouseclickedd" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="154.0" prefWidth="218.0">
+               <children>
+                  <ImageView fx:id="userp11" fitHeight="130.0" fitWidth="150.0" layoutX="35.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../password.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="text3" layoutX="16.0" layoutY="134.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="CHANGH PASSOWRD" textFill="#3d6cb2">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="logout" layoutX="734.0" layoutY="1.0" onMouseClicked="#mouseclickedd" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="149.0" prefWidth="218.0">
+               <children>
+                  <ImageView fx:id="userp111" fitHeight="112.0" fitWidth="130.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logout.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="text4" layoutX="16.0" layoutY="134.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="LOGOUT" textFill="#3d6cb2">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutX="9.0" layoutY="205.0" prefHeight="494.0" prefWidth="930.0" style="-fx-border-color: #1C2833;" visible="false">
+         <children>
+            <TextField fx:id="ser" layoutX="318.0" layoutY="22.0" prefHeight="34.0" prefWidth="289.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #1c2833 transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="147.0" layoutY="18.0" prefHeight="39.0" prefWidth="168.0" text="Search by area :" textFill="#3d6cb2">
+               <font>
+                  <Font name="Gabriola" size="32.0" />
+               </font>
+            </Label>
+            <TableView fx:id="showCourseTable" layoutX="20.0" layoutY="71.0" prefHeight="411.0" prefWidth="893.0">
+               <columns>
+                  <TableColumn fx:id="name1113" minWidth="0.0" prefWidth="0.0" text="        " />
+                  <TableColumn fx:id="planenumber" prefWidth="203.20000839233398" text="planenumber" />
+                  <TableColumn fx:id="planetake" prefWidth="224.8000030517578" text="Planetakeofftime" />
+                  <TableColumn fx:id="timearri" prefWidth="218.39996337890625" text="Arrivaltime" />
+                  <TableColumn fx:id="planedest" prefWidth="245.60003662109375" text="planedestination" />
+               </columns>
+               <stylesheets>
+                  <URL value="@../../../../../Desktop/SECAND_YEAR/database/project/dataBaseProject/src/databaseproject/css/TableView.css" />
+                  <URL value="@../TableView.css" />
+               </stylesheets>
+            </TableView>
+            <AnchorPane fx:id="pane2" layoutX="620.0" layoutY="16.0" onMouseClicked="#mouseclickedd" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-border-color: #1c2833; -fx-background-radius: 50; -fx-border-radius: 50;" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="648.0" layoutY="32.0">
+               <image>
+                  <Image url="@../searchB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="oo" layoutX="14.0" layoutY="376.0" prefHeight="310.0" prefWidth="331.0">
+         <children>
+            <ImageView fx:id="showflight1" fitHeight="400.0" fitWidth="350.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../airplane.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainBlackPanel" layoutX="-1.0" layoutY="2.0" opacity="0.46" prefHeight="726.0" prefWidth="954.0" style="-fx-background-color: black;" visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane fx:id="lll" layoutX="234.0" layoutY="168.0" minHeight="400.0" minWidth="300.0" prefHeight="465.0" prefWidth="507.0" style="-fx-background-color: #b4d7Fe#3d6cb5; -fx-border-color: #1C2833; -fx-border-style: solid none solid none;" visible="false">
+         <children>
+            <Button fx:id="add" accessibleText="studentButton" layoutX="33.0" layoutY="396.0" mnemonicParsing="false" onAction="#ACTI" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #28B463; -fx-border-radius: 50; -fx-background-radius: 50;" text="BOOKING" textAlignment="CENTER" textFill="#1c2833" AnchorPane.leftAnchor="33.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Text fx:id="passwordHText" fill="#28b463" layoutX="65.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" visible="false">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="emailHText" fill="#28b463" layoutX="65.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" visible="false">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="cancel" accessibleText="studentButton" layoutX="271.0" layoutY="396.0" mnemonicParsing="false" onAction="#ACTI" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: #28B463; -fx-border-radius: 50; -fx-background-radius: 50;" text="Cancel" textAlignment="CENTER" textFill="#1c2833" AnchorPane.leftAnchor="271.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="39.0" layoutY="185.0" prefHeight="71.0" prefWidth="474.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="-31.0" prefHeight="39.0" prefWidth="150.0" text="Tour ID:-" textFill="#1c2833">
+                     <font>
+                        <Font name="Bodoni MT" size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TD" layoutX="151.0" layoutY="-57.0" prefHeight="55.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Text fill="#1c2833" layoutX="46.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="GL" layoutX="190.0" layoutY="190.0" prefHeight="55.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #28B463 transparent; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="TBOOK" layoutX="54.0" layoutY="37.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="407.0" style="-fx-background-color: transparent;" text="BOOKING TICKETS" textFill="#1c2833">
+               <font>
+                  <Font name="Bodoni MT" size="37.0" />
+               </font>
+            </Button>
+            <Label layoutX="45.0" layoutY="216.0" prefHeight="39.0" prefWidth="150.0" text="GAMAIL:-" textFill="#1c2833">
+               <font>
+                  <Font name="Bodoni MT" size="27.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="89.0" layoutY="313.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="118.0" text="VIP" textFill="#1c2833">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="332.0" layoutY="311.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" text="ECONOMI" textFill="#1c2833">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="pane0" layoutX="74.0" layoutY="143.0" prefHeight="465.0" prefWidth="803.0" style="-fx-background-color: #1c2833;" visible="false">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="57.0" prefHeight="60.0" prefWidth="798.0" style="-fx-border-color: #1c2833;">
+               <children>
+                  <RadioButton fx:id="vip" layoutX="248.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#98dbff" />
+                  <RadioButton fx:id="eco" layoutX="248.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#98dbff" />
+                  <RadioButton fx:id="with" layoutX="351.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#98dbff" />
+                  <RadioButton fx:id="without" layoutX="351.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#98dbff" />
+                  <RadioButton fx:id="one" layoutX="475.0" layoutY="12.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#98dbff" />
+                  <RadioButton fx:id="two" layoutX="475.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#98dbff" />
+                  <RadioButton fx:id="bookforfamily" layoutX="592.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="BOOK for Family" textFill="#98dbff" />
+                  <RadioButton fx:id="bookforyou" layoutX="594.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioaction" text="Book for you only" textFill="#98dbff" />
+                  <TextField fx:id="T1" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30;" />
+                  <Line endX="707.6000366210938" layoutX="115.0" startX="-115.00001525878906" stroke="#98dbff" />
+                  <AnchorPane layoutX="142.0" layoutY="-198.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="67.0" layoutY="-93.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneltotal" layoutX="-1.0" layoutY="328.0" prefHeight="228.0" prefWidth="834.0" visible="false">
+               <children>
+                  <ScrollPane layoutY="25.0" prefHeight="200.0" prefWidth="833.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="819.0">
+                           <children>
+                              <AnchorPane prefHeight="68.0" prefWidth="819.0">
+                                 <children>
+                                    <RadioButton fx:id="vip1" layoutX="252.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#1c2833" />
+                                    <RadioButton fx:id="eco1" layoutX="253.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#1c2833" />
+                                    <RadioButton fx:id="with1" layoutX="346.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="without1" layoutX="347.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="one1" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#1c2833" />
+                                    <RadioButton fx:id="two1" layoutX="470.0" layoutY="42.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#1c2833" />
+                                    <TextField fx:id="te1" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #1c2833; -fx-text-fill: white;" />
+                                    <Line endX="683.3999633789062" layoutX="115.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                    <Line endX="693.3999633789062" endY="1.4000244140625" layoutX="117.0" layoutY="65.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="66.0" prefHeight="68.0" prefWidth="819.0">
+                                 <children>
+                                    <RadioButton fx:id="vip2" layoutX="254.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#1c2833" />
+                                    <RadioButton fx:id="eco2" layoutX="255.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#1c2833" />
+                                    <RadioButton fx:id="with2" layoutX="349.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="without2" layoutX="349.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="one2" layoutX="472.0" layoutY="12.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#1c2833" />
+                                    <RadioButton fx:id="two2" layoutX="473.0" layoutY="42.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#1c2833" />
+                                    <TextField fx:id="te2" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #1c2833; -fx-text-fill: white;" />
+                                    <Line endX="683.3999633789062" layoutX="115.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                    <Line endX="693.3999633789062" endY="1.4000244140625" layoutX="117.0" layoutY="65.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="130.0" prefHeight="118.0" prefWidth="826.0">
+                                 <children>
+                                    <RadioButton fx:id="vip3" layoutX="255.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#1c2833" />
+                                    <RadioButton fx:id="eco3" layoutX="254.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#1c2833" />
+                                    <RadioButton fx:id="with3" layoutX="350.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="without3" layoutX="351.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="one3" layoutX="473.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#1c2833" />
+                                    <RadioButton fx:id="two3" layoutX="474.0" layoutY="42.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#1c2833" />
+                                    <TextField fx:id="te3" layoutX="15.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #1c2833; -fx-text-fill: white;" />
+                                    <Line endX="683.3999633789062" layoutX="115.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                    <Line endX="693.3999633789062" endY="1.4000244140625" layoutX="117.0" layoutY="65.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                    <AnchorPane layoutX="7.0" layoutY="64.0" prefHeight="68.0" prefWidth="819.0">
+                                       <children>
+                                          <RadioButton fx:id="vip4" layoutX="248.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#1c2833" />
+                                          <RadioButton fx:id="eco4" layoutX="248.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#1c2833" />
+                                          <RadioButton fx:id="with4" layoutX="347.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#1c2833" />
+                                          <RadioButton fx:id="without4" layoutX="347.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#1c2833" />
+                                          <RadioButton fx:id="one4" layoutX="469.0" layoutY="12.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#1c2833" />
+                                          <RadioButton fx:id="two4" layoutX="470.0" layoutY="43.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#1c2833" />
+                                          <TextField fx:id="te4" layoutX="7.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #1c2833; -fx-text-fill: white;" />
+                                          <Line endX="683.3999633789062" layoutX="115.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                          <Line endX="693.3999633789062" endY="1.4000244140625" layoutX="117.0" layoutY="65.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="268.0" prefHeight="68.0" prefWidth="819.0">
+                                 <children>
+                                    <RadioButton fx:id="vip5" layoutX="254.0" layoutY="11.0" mnemonicParsing="false" onAction="#radioaction" text="VIP" textFill="#1c2833" />
+                                    <RadioButton fx:id="eco5" layoutX="253.0" layoutY="40.0" mnemonicParsing="false" onAction="#radioaction" text="Economic" textFill="#1c2833" />
+                                    <RadioButton fx:id="with5" layoutX="351.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="With meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="without5" layoutX="351.0" layoutY="40.0" mnemonicParsing="false" onAction="#radioaction" text="Without meal" textFill="#1c2833" />
+                                    <RadioButton fx:id="one5" layoutX="475.0" layoutY="10.0" mnemonicParsing="false" onAction="#radioaction" text="One way" textFill="#1c2833" />
+                                    <RadioButton fx:id="two5" layoutX="476.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioaction" text="Round-Trip" textFill="#1c2833" />
+                                    <TextField fx:id="te5" layoutX="18.0" layoutY="21.0" prefHeight="25.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #1c2833; -fx-text-fill: white;" />
+                                    <Line endX="683.3999633789062" layoutX="115.0" layoutY="-6.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                    <Line endX="693.3999633789062" endY="1.4000244140625" layoutX="117.0" layoutY="65.0" startX="-115.00001525878906" stroke="#98dbff" />
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+            <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="792.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/15495470391574055266-128.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="closeButton" layoutX="785.0" layoutY="5.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="40.0" prefWidth="47.0" styleClass="parent" stylesheets="@../Css.css" />
+            <ImageView fitHeight="150.0" fitWidth="110.0" layoutX="40.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gvXxA205.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="129.0" fitWidth="210.0" layoutX="345.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../19_2017-636482578877392184-739.jpg" />
+               </image></ImageView>
+            <Label layoutX="336.0" layoutY="10.0" prefHeight="34.0" prefWidth="118.0" text="BOOKING" textFill="#98dbff">
+               <font>
+                  <Font name="Bodoni MT" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="112.0" layoutX="203.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../arrow-right.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="add" accessibleText="studentButton" layoutX="663.0" layoutY="6.0" mnemonicParsing="false" onAction="#ACTI" onMouseEntered="#panneaction" onMouseExited="#panneexited" onMousePressed="#mousepressed" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #98dbff; -fx-border-color: #28B463; -fx-border-radius: 50; -fx-background-radius: 50;" text="BOOK NOW" textAlignment="CENTER" textFill="#1c2833">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

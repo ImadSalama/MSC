@@ -1,0 +1,37 @@
+create table airplane(
+airplane_number int primary key,
+number_of_seats int
+);
+create table book(
+Tour_id char(5)primary key,
+airplane_number int,
+FOREIGN KEY (airplane_number)REFERENCES airplane (airplane_number)
+
+);
+insert into airplane values(1,50);
+insert into airplane values(2,60);
+insert into airplane values(3,70);
+
+insert into book values(11112,2);
+insert into book values(11111,1);
+insert into airplane values(10,0);
+insert into book values(11117,10);
+
+  
+ create table add_man(  
+  flight_number char(5)primary key,
+plane_Numberr int,
+fromm char(30),
+too char(6),
+flight_type char(50),
+ flight_time char(8),
+plane_name char(15),
+flight_date date
+FOREIGN KEY (plane_numberr)REFERENCES airplane (airplane_number)
+ );
+
+insert into add_man values ('11111',1,'palestine','french','vip','02:02:30','huda','10-nov-2020');
+insert into add_man values ('11112',2,'palestine','french','vip','02:02:30','huda','11-nov-2021');
+insert into add_man values ('11113',3,'palestine','jordan','vip','02:02:30','huda','13-nov-2021');
+
+
