@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Boxes Group</title>    <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="stylesheet" href="assets/css/slider.css" />
+  <link rel="stylesheet" href="assets/css/c.css" />
+  <link rel="stylesheet" href="assets/css/sign_in_up.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <link rel="stylesheet" href="assets/css/footer.css" />    <link rel="stylesheet" href="assets/css/contact_us.css" />
+
+
+
+  <script>
+    $(document).ready(function(){
+      $('#sign_up_form').on('submit', function(e){
+
+        $.ajax({
+          method:'POST',
+          url:'http://127.0.0.1:8000/signup',
+          data:{
+            username:$('#username').val(),
+            password:$('#password').val(),
+            email:$('#email').val(),
+            first_name:$('#first_name').val(),
+            last_name:$('#last_name').val(),
+            success:function (msg){
+              console.log(msg)
+            }
+          },
+
+
+        });
+alert("Done Successfully")
+      });
+    });
+
+  </script>
+<script>
+    $(document).ready(function(){
+      $('#login_form').on('submit', function(e){
+console.log("come on")
+        $.ajax({
+          method:'POST',
+          url:'http://127.0.0.1:8000/login',
+          data:{
+            username:$('#user').val(),
+            password:$('#pass').val(),
+            success:function (msg){
+              console.log(msg)
+
+
+            },
+            fail:function (msg){
+              console.log(msg)
+
+            }
+          },
+
+
+        });
+
+      });
+    });
+  </script>
+
+
+
+
+</head>
+
+<body>
+
+
+<img src="assets/img/boxes%20group.png" style="position: absolute;
+                    margin-right: 1px;
+                    width: 120px;
+                    height: 60px;" />
+<div class="navbar">
+  <ul >
+    <li><a href="الصفحة_الرئيسية.html">الصفحة الرئيسية</a></li>
+    <li><a href="التلخيص_الجمركي.html">التخليص الجمركي</a></li>
+    <li><a href="الية_العمل.html">الية العمل</a></li>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">خدماتنا</a>
+      <div class="dropdown-content">
+        <a href="الشحن_البري.html">الشحن البري</a>
+        <a href="الشحن_الجوي.html">الشحن الجوي</a>
+        <a href="الشحن_البحري.html">الشحن البحري</a>
+        <a href="الشحن_الجزئي.html">الشحن الجزئي</a>
+        <a href="خدمات_التخزين_المؤقت.html">خدمات التخزين المؤقت</a>
+        <a href="خدمات_التغليف.html">خدمات التغليف</a>
+        <a href="خدمات_شحن_العرض_والمناسبات.html">خدمات شحن العرض والمناسبات</a>
+
+      </div>
+    </li>
+    <li><a href="اتصل%20بنا.html">اتصل بنا</a></li>
+
+
+    <li><a href="الحصول_على_عرض_الاسعار.html">الحصول على عرض الأسعار</a></li>
+    <li><a href="تسجيل_دخول.html">شحنات تتبع المنطقة الشخصية</a></li>
+    <li><a href="../second_website/الصفحة_الرئيسية.html">MSC_Computer_Services</a></li>
+  </ul>
+</div>
+
+
+<img style="height: 20%; width: 100%;   object-fit: contain; " src="assets/img/B.jpg">
+
+<div style="height:100px">
+  <div class="login-wrap" style="top:110px">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    <div class="login-form">
+      <div class="sign-in-htm">
+        <form id="login_form">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="user" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Keep me Signed in</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" id="login" onclick="submit()" value="Sign In">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="#forgot">Forgot Password?</a>
+        </div>
+        </form>
+      </div>
+
+      <div class="sign-up-htm">
+ <form id="sign_up_form">
+        <div class="group">
+          <label for="first_name" class="label">First name </label>
+          <input id="first_name" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="last_name" class="label">last name</label>
+          <input id="last_name" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="username" class="label">username</label>
+          <input id="username" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="password" class="label">password</label>
+          <input id="password" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <label for="email" class="label">Email Address</label>
+
+          <input id="email" type="text" class="input">
+        </div>
+        <div class="group">
+          <input type="submit" id="submit" class="button" onclick="submit()" value="Sign Up">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <label for="tab-1">Already Member?</label>
+
+        </div>
+ </form>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <h5 dir="rtl" style="width:1000px; font-size: 20px; position: absolute; left: 15%;">
+  هدفنا  تحقيق الثقة والمصداقية في التعامل مع العملاء</h5>
+
+
+
+
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="containe">
+    <div class="row">
+      <div class="footer-col">
+        <h4>الانتقال السريع</h4>
+        <ul>
+          <li><a href="الصفحة_الرئيسية.html">الصفحة الرئيسية</a></li>
+          <li><a href="التلخيص_الجمركي.html">التخليص الجمركي</a></li>
+          <li><a href="الية_العمل.html">الية العمل</a></li>
+          <li><a href="اتصل%20بنا.html">اتصل بنا</a></li>
+          <li><a href="الحصول_على_عرض_الاسعار.html"> عرض اسعار</a></li>
+          <li><a href="تسجيل_دخول.html"> sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <ul>
+
+          <li><a href="خدمات_التغليف.html"> خدمات التغليف </a></li>
+          <li><a href="#"> خدمات التخزين</a></li>
+          <li><a href="خدمات_شحن_العرض_والمناسبات.html"> خدمات المناسبات</a></li>
+          <li><a href="التلخيص_الجمركي.html"> التلخيص الجمركي</a></li>
+          <li><a href="الشحن_البري.html"> الشحن البري</a></li>
+          <li><a href="الشحن_البحري.html">
+            الشحن البحري</a></li>
+          <li><a href="الشحن_الجوي.html"> الشحن الجوي</a></li>
+          <li><a href="الشحن_الجزئي.html"> الشحن الجزئي</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>اتصل بنا</h4>
+        <ul>
+          <li><a href="#"> +970569332221</a></li>
+          <li><a href="#">Info@boxesps.ps</a></li>
+          <li><a href="#"> الشارع الرئيسي - وسط البلد - عمارة نوفل ط 3 قلقيلية</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تابعونا على</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/Mr.AlAmir.Sheikh"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="assets/js/target.js"></script>
+</body>
+
+</html>

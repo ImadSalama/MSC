@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.contactFrom {
+    unicode-bidi:bidi-override;
+    direction: RTL;
+    width: 60%;
+    padding: 45px;
+    background: #fff;
+    margin-right: 10%;
+    margin-left: 18%;
+}
+.contactFrom h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactFrom .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactFrom .inputBox input,
+.contactFrom .inputBox textarea
+{
+
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactFrom .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+input {
+    direction: rtl;
+    padding: 5px;
+}
+.contactFrom .inputBox input:focus ~ span,
+.contactFrom .inputBox input:valid ~ span,
+.contactFrom .inputBox textarea:focus ~ span,
+.contactFrom .inputBox textarea:valid ~ span
+{
+    color: #036ef8;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactFrom .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #0e82d5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 9px;
+    font-size: 15px;
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
+    .contactFrom{
+        width: 70%;
+    }
+}

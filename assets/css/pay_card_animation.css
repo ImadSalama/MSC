@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.c {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.c .card {
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    background: #5c91ed;
+    margin: auto;
+    padding: 40px;
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+    animation: card-isometric 10s infinite;
+}
+.c .card-layer {
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.c .card-layer-1 {
+    transform: translateX(0px) translateY(0) translateZ(30px);
+    background: rgba(92, 145, 237, 0.6);
+    border: 2px solid rgba(92, 145, 237, 0.5);
+}
+.c .card-layer-2 {
+    transform: translateX(0px) translateY(0) translateZ(60px);
+    background: rgba(92, 145, 237, 0.4);
+    border: 2px solid rgba(92, 145, 237, 0.5);
+}
+.c .card-layer-3 {
+    transform: translateX(0px) translateY(0) translateZ(90px);
+    background: rgba(92, 145, 237, 0.2);
+    border: 2px solid rgba(92, 145, 237, 0.5);
+}
+.c .card .bank {
+
+    font-family: "Eczar", serif;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-align: right;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1em;
+    color: #FFFFFF;
+    transform: translateX(0px) translateY(0px) translateZ(65px);
+}
+.c .card .chip {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2082.6%2054.2%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23f9e75e%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Ecardchip%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M82.6%2011.7V3.5A3.54%203.54%200%200%200%2079.1%200H56l-4.4%204.4a1.49%201.49%200%200%201-.9.4%201.22%201.22%200%200%201-.9-.4%201.27%201.27%200%200%201%200-1.8L52.4%200H30.2l11.1%2011.2%203.8-3.8a1.27%201.27%200%200%201%201.8%201.8l-4.4%204.4v6.6a1.32%201.32%200%200%201-1.3%201.3H33v11.7h16.4V17.7a1.22%201.22%200%200%201%20.4-.9l4.7-4.7a1.49%201.49%200%200%201%20.9-.4z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M82.6%2025.9V14.2H56l-4%204v7.7h30.6zM82.6%2040V28.4H52V36l4%204h26.6z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M55.5%2042.5a1.22%201.22%200%200%201-.9-.4l-4.7-4.7a1.49%201.49%200%200%201-.4-.9v-1.1h-6.9v5.3L56%2054.1h23.1a3.54%203.54%200%200%200%203.5-3.5v-8.2H55.5z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M30.2%2054.2h22.3L41.3%2043l-3.8%203.8a1.49%201.49%200%200%201-.9.4%201.22%201.22%200%200%201-.9-.4%201.27%201.27%200%200%201%200-1.8l4.4-4.4v-5.3h-6.9v1.1a1.22%201.22%200%200%201-.4.9L28.1%2042a1.49%201.49%200%200%201-.9.4H.1v8.2a3.54%203.54%200%200%200%203.5%203.5h23.1l4.4-4.4a1.27%201.27%200%200%201%201.8%201.8z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M.1%2028.4V40h26.5l4-4v-7.6H.1zM26.6%2014.2H.1v11.7h30.5v-7.7l-4-4z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M26.6%200H3.5A3.54%203.54%200%200%200%200%203.5v8.2h27.1a1.22%201.22%200%200%201%20.9.4l4.7%204.7a1.49%201.49%200%200%201%20.4.9v1.1H40v-5.3z%22%2F%3E%3C%2Fsvg%3E");
+    transform: translateX(0px) translateY(0px) translateZ(65px);
+}
+.c .card .number {
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 2.19em;
+    margin: auto;
+    transform: translateX(0px) translateY(0px) translateZ(95px);
+}
+.c .card .name {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 20px;
+    transform: translateX(0px) translateY(0px) translateZ(35px);
+}
+.c .card .expiry {
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    text-transform: uppercase;
+    transform: translateX(0px) translateY(0px) translateZ(35px);
+}
+.c .card .cvv {
+    position: absolute;
+    bottom: 90px;
+    left: 240px;
+    text-transform: uppercase;
+    transform: translateX(0px) translateY(0px) translateZ(35px);
+}
+
+@keyframes card-isometric {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    }
+}

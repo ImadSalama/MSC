@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style_2.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact_us.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11,200&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11,200&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11,200;0,500&display=swap" rel="stylesheet">
+
+        <script>
+            $(document).ready(function(){
+            $('#emailform').on('submit', function(e){
+
+                $.ajax({
+                    method:'POST',
+                    url:'http://127.0.0.1:8000/contactus',
+                    data:{
+                        name:$('#name').val(),
+                        subject:$('#subject').val(),
+                        email:$('#email').val(),
+                        message:$('#massage').val(),
+                        success:function (msg){
+                            console.log(msg)
+                        }
+                    },
+
+
+                });
+
+            });
+        });
+    </script>
+
+
+
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="الصفحة_الرئيسية.html"><img src="./img/img.png"></a>
+        <div class="nav_links">
+
+            <ul>
+                <li><a href="الصفحة_الرئيسية.html">الصفحةالرئيسة</a></li>
+                <li><a href="خدماتنا.html">خدماتنا</a></li>
+                <li><a href="من_نحن.html">من نحن</a></li>
+                <li><a href="اتصل_بنا.html">اتصل بنا</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</section>
+
+<div class="call_box">
+    <p>MSC_LTD  / اتصل بنا </p></div>
+<div class="left_box">
+
+
+<h5>اذا كنت ترغب بالحصول على المزيد من المعلومات حول خدماتنا، لا تتردد بالتواصل معنا بشكل مباشر اليوم. سنكون سعداء جداً للاجابة عن استفسارتك من خلال الهاتف، البريد الالكتروني أو حتى ترتيب اجتماع سريع لفهم احتياجاتك والبدء بخطوات عملية نحو نجاح أعمالك وتطويرها.</h5>
+    <br>
+    <div class="text_left">
+
+
+        <p>للاستفسار،
+            لا تتردد بالتواصل معنا من خلال النموذج التالي</p>
+    </div>
+
+
+            <div class="login-form">
+                <div class="sign-in-htm">
+<form id="emailform">
+                    <div class="group">
+                        <label for="name" class="label">الاسم </label>
+                        <input id="name" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="phone_number" class="label">رقم الهاتف</label>
+                        <input id="phone_number" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="company" class="label">الشركة</label>
+                        <input id="company" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="subject" class="label">الموضوع</label>
+                        <input id="subject" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="email" class="label">البريد الالكتروني</label>
+                        <input id="email" type="email" class="input" >
+                    </div>
+                    <div class="group">
+                        <label for="massage" class="label">استفسارك</label>
+                        <textarea id="massage"  class="input"></textarea>
+                    </div>
+
+                    <div class="group">
+                        <input type="submit" class="button" id="submit" onclick="submit()" value="ارسال">
+                    </div>
+</form>
+                    <div class="hr"></div>
+<h5>ساعات العمل</h5>
+                    <h5>الأحد - الخميس
+                    </h5>
+                    <h5> 08:00 صباحاً - 04:00 مساءً</h5><br>
+                    <h5>
+                        الشارع الرئيسي - وسط البلد - عمارة نوفل ط 3 p3401269 قلقيلية</h5>
+
+                    <h5>البريد الالكتروني:Info@boxesps.ps</h5>
+                    <h5>جوال:092939810</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div style="height: 1510px">
+
+</div>
+
+<footer class="footer">
+    <div class="containe">
+        <div class="row">
+            <div class="footer-col">
+                <h4>الانتقال السريع</h4>
+                <ul>
+                    <li><a href="الصفحة_الرئيسية.html">الصفحةالرئيسة</a></li>
+                    <li><a href="خدماتنا.html">خدماتنا</a></li>
+                    <li><a href="من_نحن.html">من نحن</a></li>
+                    <li><a href="اتصل_بنا.html">اتصل بنا</a></li>
+
+                    <li><a href="../main%20page/الصفحة_الرئيسية.html">MSC_Customs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>بعض خدماتنا
+                </h4><ul>
+                <li><a href="التصميم_المتجاوب.html">التصميم المتجاوب</a></li>
+                <li><a href="تطبيقات_الهواتف_الذكية.html">تطبيقات الهواتف الذكية
+                </a></li>
+                <li><a href="تصميم_وتطوير_مواقع_الانترنت.html">تصميم وتطوير مواقع الانترنت</a></li>
+                <li><a href="حجز_الدومينات.html">حجز الدومينات </a></li>
+                <li><a href="استضافة_المواقع_الالكترونية.html">استضافة المواقع
+                </a></li>
+                <li><a href="المواقع_المخصصة_للموبايل.html">  المواقع المخصصة للموبايل </a></li>
+            </ul>
+            </div>
+            <div class="footer-col">
+                <h4>اتصل بنا</h4>
+                <ul>
+                    <li><a href="#"> +970569332221</a></li>
+                    <li><a href="#">Info@boxesps.ps</a></li>
+                    <li><a href="#"> الشارع الرئيسي - وسط البلد - عمارة نوفل ط 3 قلقيلية</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تابعونا على</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Mr.AlAmir.Sheikh"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

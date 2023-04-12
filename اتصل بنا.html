@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="auto">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Boxes Group</title>    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/c.css" />
+    <link rel="stylesheet" href="assets/css/sign_in_up.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />    <link rel="stylesheet" href="assets/css/contact_us.css" />
+
+</head>
+<script>
+    $(document).ready(function(){
+        $('#contact_form').on('submit', function(e){
+
+            $.ajax({
+                method:'POST',
+                url:'http://127.0.0.1:8000/contactus',
+                data:{
+                    name:$('#name').val(),
+                    subject:$('#subject').val(),
+                    email:$('#email').val(),
+                    message:$('#massage').val(),
+                    success:function (msg){
+                        console.log(msg)
+                    }
+                },
+
+
+            });
+
+        });
+    });
+</script>
+
+<body>
+
+
+
+</a>
+<img src="assets/img/boxes%20group.png" style="position: absolute;
+                    margin-right: 1px;
+                    width: 120px;
+                    height: 60px;" />
+<div class="navbar">
+    <ul >
+        <li><a href="الصفحة_الرئيسية.html">الصفحة الرئيسية</a></li>
+        <li><a href="التلخيص_الجمركي.html">التخليص الجمركي</a></li>
+        <li><a href="الية_العمل.html">الية العمل</a></li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">خدماتنا</a>
+            <div class="dropdown-content">
+                <a href="الشحن_البري.html">الشحن البري</a>
+                <a href="الشحن_الجوي.html">الشحن الجوي</a>
+                <a href="الشحن_البحري.html">الشحن البحري</a>
+                <a href="الشحن_الجزئي.html">الشحن الجزئي</a>
+                <a href="خدمات_التخزين_المؤقت.html">خدمات التخزين المؤقت</a>
+                <a href="خدمات_التغليف.html">خدمات التغليف</a>
+                <a href="خدمات_شحن_العرض_والمناسبات.html">خدمات شحن العرض والمناسبات</a>
+
+            </div>
+        </li>
+        <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+
+
+        <li><a href="الحصول_على_عرض_الاسعار.html">الحصول على عرض الأسعار</a></li>
+        <li><a href="تسجيل_دخول.html">شحنات تتبع المنطقة الشخصية</a></li>
+
+        <li><a href="../second_website/الصفحة_الرئيسية.html">MSC_Computer_Services</a></li>
+
+    </ul>
+</div>
+
+
+<img style="height: 20%; width: 100%;   object-fit: contain; " src="assets/img/B.jpg">
+
+<div style="height:150px">
+<div class="login-wrap" style="top:110px">
+    <div class="login-html">
+        <form id="contact_form">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">تواصل معنا</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <label for="name" class="label">Name</label>
+                    <input id="name" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="subject" class="label">Subject</label>
+                    <input id="subject" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="massage" class="label">Massage</label>
+                    <textarea id="massage" type="text" class="input"></textarea>
+                </div>
+
+                <div class="group">
+                    <input type="submit" class="button" id="submit" onclick="submit()" value="تقديم">
+                </div>
+                <div class="hr"></div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <h5 dir="rtl" style="width:1000px; font-size: 20px; position: absolute; left: 15%;">
+        يسر شركتنا تزويدك بمعلومات عن المهمة المناسبة لكم
+        اتصل بالرقم 092939810 أو املأ الاستمارة وسنعاود الاتصال بك</h5>
+
+
+</div>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="containe">
+        <div class="row">
+            <div class="footer-col">
+                <h4>الانتقال السريع</h4>
+                <ul>
+                    <li><a href="الصفحة_الرئيسية.html">الصفحة الرئيسية</a></li>
+                    <li><a href="التلخيص_الجمركي.html">التخليص الجمركي</a></li>
+                    <li><a href="الية_العمل.html">الية العمل</a></li>
+                    <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                    <li><a href="الحصول_على_عرض_الاسعار.html"> عرض اسعار</a></li>
+                    <li><a href="تسجيل_دخول.html"> sign in</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>خدماتنا</h4>
+                <ul>
+
+                    <li><a href="خدمات_التغليف.html"> خدمات التغليف </a></li>
+                    <li><a href="#"> خدمات التخزين</a></li>
+                    <li><a href="خدمات_شحن_العرض_والمناسبات.html"> خدمات المناسبات</a></li>
+                    <li><a href="التلخيص_الجمركي.html"> التلخيص الجمركي</a></li>
+                    <li><a href="الشحن_البري.html"> الشحن البري</a></li>
+                    <li><a href="الشحن_البحري.html">
+                        الشحن البحري</a></li>
+                    <li><a href="الشحن_الجوي.html"> الشحن الجوي</a></li>
+                    <li><a href="الشحن_الجزئي.html"> الشحن الجزئي</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>اتصل بنا</h4>
+                <ul>
+                    <li><a href="#"> +970569332221</a></li>
+                    <li><a href="#">Info@boxesps.ps</a></li>
+                    <li><a href="#"> الشارع الرئيسي - وسط البلد - عمارة نوفل ط 3 قلقيلية</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تابعونا على</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Mr.AlAmir.Sheikh"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/card.js"></script>
+
+</body>
+
+</html>
