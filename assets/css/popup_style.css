@@ -1,0 +1,43 @@
+
+#popup3, #popup2, #popup1, #popup4{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 690px;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: scroll;
+}
+#popup3.active, #popup2.active, #popup1.active,  #popup4.active{
+    top: 55%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+#popup_button{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 800px;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0.5;
+    transition: 0.5s;
+    overflow: scroll;
+}
+#popup_button.active{
+    top: 70%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}

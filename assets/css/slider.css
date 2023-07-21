@@ -1,0 +1,24 @@
+body{
+    background-color: #34495e;
+}
+.slider{
+    height:710px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px auto;
+}
+#img{
+    width:90%;
+    height:600px;
+    object-fit: contain;
+
+}
+.slider img{
+position: absolute;
+   width: 99%;
+    height: 90%;
+
+
+}
+.a{
+    position: absolute; width: 99%; height: 80%;opacity: 0.9;
+}

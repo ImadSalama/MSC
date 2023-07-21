@@ -1,0 +1,41 @@
+#popup3, #popup2, #popup1{
+    position: absolute;
+    margin-right:28.5%;
+    transform: translate(-50%,-50%);
+    width: 650px;
+    height: 550px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: scroll;
+}
+#popup3.active, #popup2.active, #popup1.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+#popup_button{
+    position: absolute;
+
+    margin-right:50%;;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0.5;
+    transition: 0.5s;
+    overflow: scroll;
+}
+#popup_button.active{
+    overflow: scroll;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}

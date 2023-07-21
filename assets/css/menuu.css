@@ -1,0 +1,79 @@
+nav {
+    top:0;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 52px;
+
+}
+.navbarr a{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.navbarr. nav-area {
+    background: #333;
+
+}
+.navbarr .nav-area:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.navbarr.nav-area ul {
+    list-style: none;
+    margin: 0;
+    float: right;
+
+}
+.navbarr .nav-area  > ul > li {
+    float: right;
+    position: relative;
+
+}
+.navbarr .nav-area  ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+
+}
+.navbarr .nav-area ul li:hover a{
+    background: #333;
+
+}
+.navbarr .nav-area ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 180px;
+    display: none;
+    top:100%;
+    right:0;
+
+}
+.navbarr .nav-area ul li:hover > ul{
+    display: block;
+}
+.navbarr .nav-area ul ul li{
+    position: relative;
+
+
+}
+.navbarr .nav-area ul ul ul{
+    top:0;
+    right:100%;
+}
+.navbarr .nav-area ul ul ul li:hover a {
+    background: #34495a;
+}
+footer {
+    position: relative;
+    font-size: 12px;
+    width: 100%;
+    color: rgb(239, 239, 247);
+    direction: rtl;
+}
