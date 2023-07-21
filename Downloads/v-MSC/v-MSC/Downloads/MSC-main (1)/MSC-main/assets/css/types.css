@@ -1,0 +1,79 @@
+.ship_type{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ship_card:before{
+    opacity: 0.5;
+}
+.ship_card{
+    margin-right: 10px;
+    margin-left: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: flex-start;
+color: black;
+box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.3);
+border:1px solid #000;
+transition:all 0.3s ease;
+border-radius:8px;
+
+ 
+}
+
+.ship_card:hover
+{
+    transform:translateY(-10px);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.6);
+}
+.type_img{
+    width: 100%;
+    height: 200px;
+    border-radius:8px;
+}
+.shipping_txt{
+    text-align: center;
+color: #f0f0f0;
+    width: 100%;height: auto;
+
+      
+}
+.ship_card_title{
+    font-size: 24px;
+background-color: white;
+
+}
+
+@media only screen and (max-width:750px) {
+    .ship_type{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+    .ship_card{
+       min-width: 25%;
+       min-height: 100px;
+
+       margin-bottom:30px;
+       margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .shipping_txt{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:250px) {
+    .ship_type{
+    flex-wrap: nowrap;
+     overflow-x: auto;
+    width: 100%;
+    }
+    .ship_card{
+        min-width: 60%;
+    }
+}

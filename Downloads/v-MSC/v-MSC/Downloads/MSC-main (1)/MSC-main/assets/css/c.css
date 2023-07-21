@@ -1,0 +1,29 @@
+.container img {
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+
+    transform-origin:center;
+    transform:perspective(800px) rotateY(20deg);
+    transition:0.5s;
+}
+.container {
+    position: relative;
+    max-width:900px;
+    max-height:950px;
+left: 20%;
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+}
+.container:hover img {
+    opacity:0.3;
+}
+.container img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+}
